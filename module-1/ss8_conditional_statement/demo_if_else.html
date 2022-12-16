@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Kiểm tra xem học viên có vượt qua module hay không?
+    Điểm < 60: rớt module
+    Điểm >= 60: Qua module
+     */
+    // let score = prompt("Nhập vào điểm của bạn: ");
+    // //Cách 1 => if thiếu
+    // if (score < 60) { //Biểu thức điều kiện
+    //     //<Biểu thức điều kiện> đúng thì sẽ rơi vào body
+    //     document.write('Rớt module')
+    // }
+    //
+    // if (score >= 60) {
+    //     document.write('Qua module')
+    // }
+    //
+    // // Cách 2 => Nhanh hơn cách 1 => if đủ
+    // if (score < 60) { //Biểu thức điều kiện
+    //     //<Biểu thức điều kiện> đúng thì sẽ rơi vào body
+    //     document.write('Rớt module')
+    // } else {
+    //     //<Biểu thức điều kiện> sai thì sẽ rơi vào body
+    //     document.write('Qua module')
+    // }
+
+    // Đơn & phức
+    // x = 2;
+    // if (x == 3) // Chỉ phù hợp với câu lệnh đơn => Không phù hợp với câu lệnh phức
+    //     document.write("x = 2")
+    //     document.write("x = 2")
+
+
+    // Kiểm tra xem học viên có vượt qua module hay không?
+    //  Điểm < 50: chắc chắn rớt module
+    // Điểm >= 50 && điểm < 60 => Xem xét
+    // Điểm >= 60: Qua module
+    // if (score < 50) { //Biểu thức điều kiện
+    //     //<Biểu thức điều kiện> đúng thì sẽ rơi vào body
+    //     document.write('Rớt module')
+    // } else { // score >= 50
+    //     if (score < 60) {
+    //         document.write('Xem xét')
+    //     } else { // score >= 60
+    //         document.write('Qua module')
+    //     }
+    // }
+
+    //Cách 3: if bậc thang
+    if (score < 50) { //Biểu thức điều kiện
+        //<Biểu thức điều kiện> đúng thì sẽ rơi vào body
+        document.write('Rớt module')
+    } else if (score < 60) {
+        document.write('Xem xét')
+    } else { // score >= 60
+        document.write('Qua module')
+    }
+
+    //Cách 4: if lồng
+    let x = 100;
+    if(x == 100) {
+        if (true) {
+        }
+    }
+</script>
+</body>
+</html>
