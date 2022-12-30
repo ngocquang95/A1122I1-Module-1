@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 2;// Chỉ lưu được 1 giá trị
+
+    //Truy xuất phần phần tử có vị trí index = 1
+    /*
+    index = 0 => Giá trị bằng 10 => arr[0]
+    index = 1 => Giá trị bằng 20 => arr[1]
+    index = 2 => Giá trị bằng 30 => arr[2]
+     */
+    // let arr = [10, 20, 30]; //Khai mảng mảng arr gồm 3 phần tử 10, 20, 30
+    // alert(arr[2])
+
+
+    //Bước 1: Nhập vào số lượng phần tử của mảng
+    let n = +prompt("Nhập vào số lượng phần tử của mảng")
+
+    //Bước 2: Nhập từng phần tử của mảng
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+        arr[i - 1] = +prompt("Nhập vào phần tử thứ " + i)
+    }
+
+    //Bước 3: Xuất mảng đó ra
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (i == arr.length - 1) {
+    //         document.write(arr[i])
+    //     } else {
+    //         document.write(arr[i] + ' - ')
+    //     }
+    // }
+
+    document.write(arr.join(' - '))
+
+
+
+
+</script>
+</body>
+</html>

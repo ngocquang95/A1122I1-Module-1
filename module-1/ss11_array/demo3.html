@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    let mang1Chieu = [10, 20, 30]; //Mảng 1 chiều
+    let mang2Chieu = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]; //x là mảng 1 chiều
+
+    // document.write(mang2Chieu[hàng][cột])
+    // document.write(mang2Chieu[2][1])
+    for (let i = 0; i < mang2Chieu.length; i++) { // DUyệt qua các hàng
+        for (let j = 0; j < mang2Chieu[i].length; j++) {
+            document.write(mang2Chieu[i][j] + " ")
+        }
+        document.write('<br/>')
+    }
+</script>
+</body>
+</html>
