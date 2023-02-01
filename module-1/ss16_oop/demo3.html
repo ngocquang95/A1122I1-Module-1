@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Student
+    thuộc tính: id, name, score
+    phương thức: display, ...
+     */
+    let s1 = {
+        id: 1,
+        name: 'Nguyễn Văn A',
+        score: 5,
+
+        display: function () {
+            document.write(this.id + " - " + this.name + " - " + this.score)
+        }
+    }
+
+    let s2 = {
+        id: 2,
+        name: 'Nguyễn Văn B',
+        score: 5,
+
+        display: function () {
+            document.write(this.id + " - " + this.name + " - " + this.score)
+        }
+    }
+
+    s1.display()
+</script>
+</body>
+</html>
