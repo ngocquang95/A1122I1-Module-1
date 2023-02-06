@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    class Person {
+        constructor(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+    }
+
+    /*
+    Student
+    thuộc tính: id, name, score
+    phương thức: display, ...
+     */
+    class Student extends Person {
+        constructor(id, name, score) {
+            super(id, name);
+            this.score = score; // thuộc tính
+        }
+
+        display() { //phương thức
+            document.write(this.id + " - " + this.name + " - " + this.score)
+        }
+
+        getScore() {
+            return this.score; //this được gọi là đối tượng hiện tại
+        }
+
+        setScore(score) {
+            if (score >= 0 && score <= 10) {
+                this.score = score;
+            }
+        }
+    }
+
+    let s1 = new Student(1, 'Nguyễn Văn Thắng', 3);
+    s1.display(); // 1 - Hoàng Gia - 30
+</script>
+</body>
+</html>

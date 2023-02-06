@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Nhập từ bàn phím mảng số nguyên gồm n phần tử (n<=50).-->
+<!--Hiển thị ra màn hình hiệu của Tổng các số chẵn và Tổng các số lẻ-->
+<!--có trong mảng-->
+
+<script>
+    let n;
+    do{
+        n = +prompt("Nhập số phần tử của mảng:");
+        if(n>50){
+            alert("MI nhập sai r, phải nhỏ hơn hoặc bằng 50 phần tử")
+        }
+    }while (n>50);
+
+
+    let arr = []; // khai bao mang  rỗng
+    sumOfEven =0; //
+    sumOfOdd = 0;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ "+ (i+1)+ " :");
+        if(arr[i] % 2 ==0){
+            sumOfChan += arr[i];
+        }else{
+            sumOfLe += arr[i];
+        }
+    }
+
+    document.write("Mang đã nhập là:"+ arr.join( '-' ));
+    document.write("<br>Hiệu tổng chẵn - tổng lẻ: " + (sumOfChan - sumOfLe));
+</script>
+</body>
+</html>

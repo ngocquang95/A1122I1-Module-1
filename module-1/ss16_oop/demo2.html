@@ -22,20 +22,37 @@
             document.write(this.id + " - " + this.name + " - " + this.score)
         }
 
-        setScore(score) {
-            if (score >= 0 && score <= 10) {
-                this.score = score;
-            }
+        getId() {
+            return this.id;
+        }
+
+        setId(id) {
+            this.id = id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
         }
 
         getScore() {
             return this.score; //this được gọi là đối tượng hiện tại
+        }
+
+        setScore(score) {
+            if (score >= 0 && score <= 10) {
+                this.score = score;
+            }
         }
     }
 
     let s1 = new Student(1, 'Nguyễn Văn Thắng', 3);
     let s2 = new Student(2, 'Nguyễn Văn Vĩ', 2.5);
     s1.name = 'Hoàng Gia' // . là một toán tử để giúp đối tượng có thể truy xuất đến thuộc tính và phương thức
+    s1.score = 100; // Được là do JS không hỗ trợ tốt đa về lập trình hướng đối tượng
     s1.setScore(100);
     // s1.score = 100; // => Đối với những ngôn ngữ Java, C++, ... sẽ không cho phép điều này (Do thuộc tính là private)
     s1.display(); // 1 - Hoàng Gia - 30
