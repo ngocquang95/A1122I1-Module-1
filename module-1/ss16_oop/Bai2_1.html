@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--II. Viết hàm truyền vào 1 mảng-->
+<!--1. Tính tổng các số chia hết cho 3 ở trong mảng-->
+<script>
+  function sumDivisibleBy3(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] % 3 === 0) {
+        sum += array[i];
+      }
+    }
+    return sum;
+  }
+
+
+  // Trong hàm sumDivisibleBy3, chúng ta dùng vòng lặp for để duyệt qua từng phần tử của mảng array. Mỗi lần lặp, nếu phần tử đó chia hết cho 3 (kiểm tra bằng array[i] % 3 === 0), ta cộng dồn giá trị của phần tử đó vào biến tổng sum. Cuối cùng, hàm sẽ trả về giá trị của biến sum.
+</script>
+</body>
+</html>

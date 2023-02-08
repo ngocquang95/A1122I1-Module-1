@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--3. Hàm trả về chuỗi với quy tắc, nếu ký tự nào in hoa thì biến thành in thường,-->
+<!--// nếu in thường thì biến thành in hoa-->
+<script>
+    function toggleCase(str) {
+        let result = '';
+        for (let char of str) {
+            if (char === char.toUpperCase()) {
+                result += char.toLowerCase();
+            } else if (char === char.toLowerCase()) {
+                result += char.toUpperCase();
+            } else {
+                result += char;
+            }
+        }
+        return result;
+    }
+
+    document.write(toggleCase("Hello"))
+</script>
+</body>
+</html>
